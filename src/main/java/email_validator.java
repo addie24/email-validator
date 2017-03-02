@@ -32,26 +32,7 @@ public class email_validator {
 		}
 	/**********************************/
 		
-		//rule 3, there shouldn't be any spacing in the valid email
-		int c3=0;
-		for(int i=0;i<email.length();i++){
-			if(email.charAt(i)==' ')
-				c3++;
-		}
-		if(c3!=0){
-			System.out.println("Test three passed");
-			c++;
-		}
 		
-	/**********************************/	
-		
-		//rule 4, the first character shouldn't be "-"
-		if(email.charAt(0)=='-'){
-			
-			System.out.println("Test four passed");
-			c++;
-		}
-	/**********************************/
 			
 		return c;
 		}
